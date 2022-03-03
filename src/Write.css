@@ -1,0 +1,21 @@
+.write-form {
+    margin-top: 4rem;
+}
+.fear{
+    margin: 1rem;
+    font-style: italic;
+}
+.fear-list__container button{
+    padding:0 1rem;
+    margin: 1rem;
+}
+.seeSimilar{
+    padding: 0.25rem 1rem;
+    margin: 1rem;
+    border: none;
+    border-bottom: 1px solid midnightblue;
+    background-color: white;
+    font-style: italic;
+    font-size: larger;
+}
+

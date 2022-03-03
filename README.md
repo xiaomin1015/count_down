@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Count_down: a React single page application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Discription
 
-## Available Scripts
+This web Application is design to provide people with anxiety with helpful tips and ways to seek professional help.
 
-In the project directory, you can run:
+To write things down is a practical way I learnt from a therapist and have been using for years when I get worried. In addiction, the web application provide user with both free hotline information and also ways to book a professional consulting(not acctually implemented) so that they know they don't have to summit that mountain alone.
+Hope this application would give people real help when they suffer from anxiety.  
 
-### `npm start`
+### `Install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project uses node and npm, Go check them by: 
+npm install; npm run build; npx serve -s build
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `structure`
 
-### `npm test`
+Although it's a single page application, it have 6 diffrent "views", user can access 5 of them using the navigation, while another page is 'privacy' that can be switched to via button in footer.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In addiction to switching different 'views' via navigation, some views has button that lead user to next 'views'. In this way, the flow of user reading is coherent.
 
-### `npm run build`
+### `Views in this Application`
+In `Actionable_tips` view, there is a carousel to show picture with picture slide containing picture, indicator to indicate which picture is showing, left and right arrow to directe into previous and next picture.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In `Count_down page`, user can write down three things that worry them most, Which is one of the main designed feature of this application. The three things will be writed into state of the whole applcation, which means when user switch between diffrent views, the thing he/her written will last untill he/her reload page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After user just add three things, the input area will dispare and show the message to direct user into next view. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In `not alone` view, there are three boxes show how many people with similar anxiouty with them corresponds to three aontent thet just wirtten. I used fake data by randomly generated number. This random number are also states of the whole application, and pasted to this view. So that user wouldn't see the number changing when he/her switch from different views. 
 
-### `npm run eject`
+And there is a scale animation in the blue massage below the three boxes.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+In `professional help` view, there is a local-menu, user can switch from `hotline` and `consulting` components.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+hotline component is designed to be a accordion, where user can open and close the detail content for each item.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+consulting component is a form, where user can input theie personal contact information so that an therapist will reach to him/her.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `feature`
+<ul>
+<li>Two complexity UI</li>
+    <ul>
+    <li>accordion</li>
+    <li>carousel</li>
+    </ul>
+<li>a loading indicator used in carousel when loading picture </li>
+<li>a scale CSS animation used in Not Alone view </li>
+<li>adaptive design</li>
+<li>validation check for form</li>
+<li>pass WAVE Evaluation for color contrast</li>
+<li>In-line css and External CSS used </li>
+</ul>

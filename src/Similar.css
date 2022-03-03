@@ -1,0 +1,88 @@
+
+.intro-active{
+    background-color: #7ec1ff;
+
+    margin: 2rem;
+    padding: 1rem;
+    font-size: xx-large;
+    transform: scale(0.8);
+}
+.intro-active:hover{
+    transform: translateX(0);
+    transition: transform 300ms;
+}
+
+.fear-container {
+    margin: 3rem;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.fear__entry {
+    background-color: wheat;
+
+    color: #111111;
+    height: 250px;
+    width: 250px;
+    position:relative;
+    padding: 1rem;
+}
+.number{
+    font-size: xxx-large;
+    font-style: italic;
+}
+
+.text__worry{
+    position: absolute;
+    left:1rem;
+}
+.text__fear-content {
+    position: absolute;
+    bottom: 20%;
+    left: 1rem;
+    font-size: x-large;
+}
+.goBack{
+    padding: 0.25rem 1rem;
+    margin: 1rem;
+    border: none;
+    border-bottom: 1px solid midnightblue;
+    background-color: white;
+    font-style: italic;
+    font-size: larger;
+}
+@media screen and (max-width:1200px) {
+    .fear__entry {
+        height: 200px;
+        width: 200px;
+    }
+    .number{
+        font-size: xx-large;
+    }
+    .text__fear-content {
+        position: absolute;
+        bottom: 15%;
+        font-size: large;
+    }
+}
+@media screen and (max-width:800px) {
+    .fear__entry {
+        height: 160px;
+        width: 160px;
+    }
+    .fear__entry{
+        font-size: smaller;
+        margin:0.5rem;
+    }
+
+    .similar-container{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .fear-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

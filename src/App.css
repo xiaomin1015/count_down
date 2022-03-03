@@ -1,38 +1,111 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+.app {
+  margin: 0;
+  font-family: sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #f9f0ff;
+  min-height: 100vh;
+  position:relative;
+  height:100%;
+}
+
+header {
+  background-color: #7ec1ff;
+  border: 1px solid #fff;
+  border-left: none;
+  border-right: none;
+  height: 3rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:space-evenly;
+}
+ul {
+  list-style-type: none;
+}
+.main-nav{
+  overflow-x: scroll;
+}
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #fff;
+
+  border-left:none;
+  border-right:none;
+  padding:0.5rem 2rem;
+  margin: 0;
+  justify-content:space-around;
+}
+a {
+  text-decoration: none;
+  color: black;
+  margin: 0.5rem;
+  padding: 8px 12px;
+}
+.main-nav a:hover {
+  background-color: #7ec1ff;
+  color:white;
+}
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+}
+footer button {
+  border: none;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  background-color: #f9f0ff;
+  color: midnightblue;
+  font-style: italic;
+}
+footer button:hover {
+  background-color: #7ec1ff;
+  color:white;
+}
+.home{
+  position: absolute;;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+}
+.home p{
+  font-size: large;
+}
+.home button{
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: none;
+  border-bottom: 1px solid midnightblue;
+  background-color: white;
+  font-style: italic;
+  font-size: larger;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width:700px) {
+  *{
+    font-size: xx-small;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:500px) {
+  .main-nav__list {
+    padding:0.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  a {
+    padding: 0;
+  }
+  .home p{
+    font-size: small;
+  }
+  *{
+    font-size: xx-small;
   }
 }
+
