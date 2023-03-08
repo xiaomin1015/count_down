@@ -39,15 +39,16 @@ consulting component is a form, where user can input theie personal contact info
 
 ### `feature`
 <ul>
-<li>Two complexity UI</li>
+<li>Self-implemented Two complexity UI</li>
     <ul>
     <li>accordion</li>
     <li>carousel</li>
     </ul>
 <li>a loading indicator used in carousel when loading picture </li>
 <li>a scale CSS animation used in Not Alone view </li>
-<li>adaptive design</li>
+<li>adaptive design to implement mobile-friendly UI layouts</li>
 <li>validation check for form</li>
+<li>semantic HTML design and added ARIA attributes</li>
 <li>pass WAVE Evaluation for color contrast</li>
 <li>In-line css and External CSS used </li>
 </ul>
